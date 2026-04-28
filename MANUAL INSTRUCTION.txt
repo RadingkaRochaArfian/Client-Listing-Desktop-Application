@@ -1,0 +1,47 @@
+                            ==| CLIENT LISTER |==
+
+~~ A simple java project within 3 days to save data about name, email, phone, and address ~~
+
+Prerequisite:
+
+- JDK v17 or higher. (use `java --version` to check)
+
+How to run:
+
+
+Linux/MacOs:
+
+Method 1 (GUI):
+
+- Right click on file
+- Click "Properties" section
+- Click "permissions" tab
+- Add file permission to execute (+x)
+- Double click on runApp.sh
+
+Method 2 (CLI):
+
+$ bash runApp.sh
+
+Method 3 (CLI):
+
+$ chmod +x runApp.sh
+$ ./runApp.sh
+
+
+Windows:
+
+Method (GUI):
+
+- Double click on runApp.bat
+
+
+~~ Additional Information ~~
+
+Data location:
+
+`bin/ClientList.csv` and `backup/clientdb.mv.db`
+
+How to get all data from H2 database:
+
+$ java -cp "lib/h2-2.2.224.jar" org.h2.tools.Shell -url "jdbc:h2:./backup/clientdb" -user sa -sql "SELECT * FROM clients"
