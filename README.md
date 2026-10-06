@@ -1,4 +1,4 @@
-# Client-Listing-Desktop-Application  
+# Client Lister
   
 > A simple java project within 3 days to save data about name, email, phone, and address  
 > Created as task implementation of Advanced Programming course
